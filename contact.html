@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Order / Contact — Toyota / Lexus CarPlay</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">TL</div>
+        <div>Toyota / Lexus CarPlay</div>
+      </a>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="install.html">Install / FAQ</a>
+        <a class="active" href="contact.html">Order / Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="h1" style="font-size:28px;margin-top:0">Order / Fitment Confirmation</h1>
+    <p class="muted" style="margin-top:-6px;line-height:1.5">
+      Starter form (static site). Later we can upgrade to Netlify Forms, Formspree, or Stripe checkout.
+    </p>
+
+    <div class="notice" style="margin-bottom:14px">
+      <strong>Tip:</strong> Include a photo of your factory screen in your message (TikTok/Facebook DM),
+      even if you submit this form.
+    </div>
+
+    <form class="hero-card" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <label class="muted small">Product ID (optional)</label>
+      <input class="input" id="product" name="product" placeholder="ex: lexus-rx-2006-2019" />
+
+      <div style="height:10px"></div>
+
+      <label class="muted small">Your name</label>
+      <input class="input" name="name" placeholder="Your name" required />
+
+      <div style="height:10px"></div>
+
+      <label class="muted small">Email / Phone</label>
+      <input class="input" name="contact" placeholder="Email or phone number" required />
+
+      <div style="height:10px"></div>
+
+      <label class="muted small">Vehicle (Year / Model)</label>
+      <input class="input" name="vehicle" placeholder="ex: 2013 Lexus GS 350" required />
+
+      <div style="height:10px"></div>
+
+      <label class="muted small">Factory navigation screen?</label>
+      <select class="input" name="factory_nav" required>
+        <option value="">Select…</option>
+        <option>Yes</option>
+        <option>No</option>
+        <option>Not sure</option>
+      </select>
+
+      <div style="height:10px"></div>
+
+      <label class="muted small">Notes</label>
+      <textarea class="input" name="notes" rows="6" placeholder="Any details, aftermarket audio, etc."></textarea>
+
+      <div style="height:12px"></div>
+
+      <button class="btn primary" type="submit">Send</button>
+
+      <p class="muted small" style="margin-top:10px">
+        Replace <span class="kbd">lashleyjeffrey07@gmail.com</span> in this file with your business email.
+      </p>
+    </form>
+
+    <div class="section">
+      <h2>Social</h2>
+      <div class="notice">
+        TikTok: <strong>@toy.lex.carplay</strong><br/>
+        Facebook Page: <strong>Toyota / Lexus CarPlay</strong>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="muted small">
+        Disclaimer: Toyota and Lexus are trademarks of their respective owners. This business is independent.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
